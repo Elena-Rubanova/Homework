@@ -13,6 +13,7 @@ public class Main {
         wholeNumber(6);
         stroka("Hello",4);
         leapYear(2022);
+        
     }
 }
 
