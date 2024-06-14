@@ -14,7 +14,6 @@ public class Main {
         stroka("Hello",4);
         leapYear(2022);
 
-
     }
 }
 
