@@ -8,13 +8,26 @@ public class Main {
         checkSumSign();
         printColor();
         compareNumbers();
-        sum(5, 9);
         number(-2);
-        wholeNumber(6);
-        stroka("Hello",4);
-        leapYear(2022);
+        wholeNumber(-20);
+        stroka("Hello", 2);
+        leapYear(2001);
+        sum(2,3);
+        array();
+        array2();
+        array3();
+        array4();
+
+
+
+
+
 
     }
+
 }
+
+
+
 
 
