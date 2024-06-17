@@ -46,7 +46,12 @@ public class Lesson5 {
 
     // задание 5
     public static boolean sum(int a, int b) {
-        return (a + b) >= 10 && (a + b) <= 20;
+        boolean b1 = (a + b) >= 10 && (a + b) <= 20;
+        if (b1) {
+            return true;
+        }else{
+            return false;
+        }
     }
 
     // задание 6
@@ -59,9 +64,12 @@ public class Lesson5 {
     }
 
     // задание 7
-    public static void wholeNumber(int a) {
-        boolean b = (a < 0);
-        System.out.println(b);
+    public static boolean wholeNumber(int a) {
+        if (a < 0) {
+            return true;
+        }else {
+            return false;
+        }
     }
 
     // задание 8
