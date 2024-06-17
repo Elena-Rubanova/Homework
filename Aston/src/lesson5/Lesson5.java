@@ -1,6 +1,7 @@
 package lesson5;
 
 public class Lesson5 {
+
     // задание 1
     public static void printThreeWords() {
         System.out.println("Orange");
@@ -60,7 +61,7 @@ public class Lesson5 {
     // задание 7
     public static void wholeNumber(int a) {
         boolean b = (a < 0);
-         System.out.println(b);
+        System.out.println(b);
     }
 
     // задание 8

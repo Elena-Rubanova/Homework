@@ -18,6 +18,7 @@ public class Main {
         array3();
         array4();
         arrayArgument(5, 8);
+
     }
 }
 
