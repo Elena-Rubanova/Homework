@@ -8,23 +8,17 @@ public class Main {
         checkSumSign();
         printColor();
         compareNumbers();
-        number(-2);
-        wholeNumber(-20);
+        number(2);
+        wholeNumber(-8);
         stroka("Hello", 2);
-        leapYear(2001);
-        sum(2,3);
+        leapYear(2000);
+        sum(2, 2);
         array();
         array2();
         array3();
         array4();
-
-
-
-
-
-
+        arrayArgument(5, 8);
     }
-
 }
 
 

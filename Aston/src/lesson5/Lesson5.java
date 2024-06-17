@@ -34,23 +34,18 @@ public class Lesson5 {
 
     // задание 4
     public static void compareNumbers() {
-        int a = 20;
+        int a = -40;
         int b = 40;
         if (a >= b) {
             System.out.println("a >= b");
-        }
-        if (a < b) {
+        } else {
             System.out.println("a < b");
         }
     }
 
     // задание 5
     public static boolean sum(int a, int b) {
-        if (10 <= a + b && a + b <= 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return (a + b) >= 10 && (a + b) <= 20;
     }
 
     // задание 6
@@ -63,17 +58,14 @@ public class Lesson5 {
     }
 
     // задание 7
-    public static boolean wholeNumber(int a) {
-        if (a < 0) {
-            return true;
-        } else {
-            return false;
-        }
+    public static void wholeNumber(int a) {
+        boolean b = (a < 0);
+         System.out.println(b);
     }
 
     // задание 8
     public static void stroka(String message, int b) {
-        for (int k = 0; k < b; k++) {
+        for (int i = 0; i < b; i++) {
             System.out.println(message);
         }
     }
@@ -142,7 +134,18 @@ public class Lesson5 {
         }
     }
 
+    // задание 14
+    public static void arrayArgument(int len, int initialValue) {
+        int[] arr5 = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr5[i] = initialValue;
+            System.out.print("[" + i + "]" + arr5[i] + " ");
+        }
+    }
 }
+
+
+
 
 
 
