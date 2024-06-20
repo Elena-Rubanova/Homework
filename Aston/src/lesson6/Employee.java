@@ -1,28 +1,25 @@
 package lesson6;
 
 public class Employee {
-    private String fullName;
+    private String FIO;
     private String position;
     private String email;
-    private int phone;
-    private int salary;
+    private String phone;
+    private double salary;
     private int age;
-    public Employee(String fullName, String position, String email, int phone, int salary, int age) {
-        this.fullName = fullName;
+
+    public Employee(String FIO, String position, String email, String phone, double salary, int age) {
+        this.FIO = FIO;
         this.position = position;
         this.email = email;
         this.phone = phone;
         this.salary = salary;
         this.age = age;
     }
-    public void printEmployee() {
-        System.out.println("ФИО: " + fullName);
-        System.out.println("Должность: " + position);
-        System.out.println("Email: " + email);
-        System.out.println("Телефон: " + phone);
-        System.out.println("Зарплата: " + salary);
-        System.out.println("Возраст: " + age);
 
+    public void printEmployeeInfo() {
+        System.out.println("ФИО: " + FIO + "\n" + "Должность: " + position + "\n" + "Email: " + email + "\n" +
+                "Телефон: " + phone + "\n" + "Зарплата: " + salary + "\n" + "Возраст: " + age);
+        System.out.println();
     }
-
 }
