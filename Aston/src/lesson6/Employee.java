@@ -21,5 +21,6 @@ public class Employee {
         System.out.println("ФИО: " + FIO + "\n" + "Должность: " + position + "\n" + "Email: " + email + "\n" +
                 "Телефон: " + phone + "\n" + "Зарплата: " + salary + "\n" + "Возраст: " + age);
         System.out.println();
+
     }
 }

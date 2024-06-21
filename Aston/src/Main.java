@@ -20,7 +20,7 @@ public class Main {
             Park park = new Park("Гомельский парк атракционов", "г.Гомель", 20);
             park.printParkInfo();
             Park.Attractions attraction = new Park.Attractions("Колесо обозрения", "с 11.00 до 22.00", 20);
-            attraction.printAttractionsInfo();
+            System.out.println(attraction);
         }
     }
 }

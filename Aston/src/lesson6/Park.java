@@ -30,9 +30,10 @@ public class Park {
             this.cost = cost;
         }
 
-        public void printAttractionsInfo() {
-            System.out.print("Название атракциона: " + attractionName + "\n" + "Время работы: " + openingHours + "\n"
+        public String toString() {
+            return String.format("Название атракциона: " + attractionName + "\n" + "Время работы: " + openingHours + "\n"
                     + "Стоимость: " + cost);
+
         }
     }
 }
