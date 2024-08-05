@@ -1,5 +1,6 @@
 package com.aston.lesson18;
 
+import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,12 +13,14 @@ public class MtsOnlineReplenishmentTest extends BaseTest {
             "Белкарт");
 
     @Test(description = "Проверка названия модуля онлайн-оплаты")
+    @Owner(value = "Elena-Rubanova")
     public void checkModuleNameTest() {
         Assert.assertEquals(getPaymentModule().getModuleName(),
                 "Онлайн пополнение\nбез комиссии", "Ошибка в названии блока");
     }
 
     @Test(description = "Проверка отображения логотиповв модуле онлайн-оплаты", dataProvider = "logos")
+    @Owner(value = "Elena-Rubanova")
     public void checkLogoDisplayedTest(int amount, List<String> logoName) {
         Assert.assertEquals(getPaymentModule().logoAmount(), amount);
         for (int i = 0; i < amount; i++) {
@@ -34,6 +37,7 @@ public class MtsOnlineReplenishmentTest extends BaseTest {
     }
 
     @Test(description = "Проверка работы ссылки")
+    @Owner(value = "Elena-Rubanova")
     void checkLinkWorksTest() {
         Assert.assertEquals(getPaymentModule().getURLLinkAboutService(), URL,
                 "Ошибка в работе ссылки");
@@ -41,6 +45,7 @@ public class MtsOnlineReplenishmentTest extends BaseTest {
     }
 
     @Test(description = "Проверка кнопки оплаты", dataProvider = "button")
+    @Owner(value = "Elena-Rubanova")
     void checkButtonWorksTest(String number, String payment) {
 
         Iframe iFrame = getPaymentModule().sendParametersAndButtonClick(number, payment);
@@ -58,6 +63,7 @@ public class MtsOnlineReplenishmentTest extends BaseTest {
     }
 
     @Test(description = "Проверка информации в  placeholders", dataProvider = "connection")
+    @Owner(value = "Elena-Rubanova")
     void checkPlaceholderTextTest(String option, String number, String amount, String email) {
         List<String> listPlaceholders;
 

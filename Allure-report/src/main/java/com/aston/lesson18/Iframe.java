@@ -1,5 +1,6 @@
 package com.aston.lesson18;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,11 +33,13 @@ public class Iframe extends BasePage {
 
     private List<WebElement> logos;
 
+    @Step("Получить информацию о тексте платежа")
     public String getPaymentText() {
         wait5(paymentTitle);
         return paymentTitle.getText();
     }
 
+    @Step("Получить информацию об ототражении логотипов")
     public boolean checkLogoDisplayed() {
         boolean result = false;
         for (WebElement element : logos) {
@@ -46,6 +49,7 @@ public class Iframe extends BasePage {
         return result;
     }
 
+    @Step("Получить название логотипа")
     public List<String> getListLogosName() {
         wait5(paymentTitle);
 
@@ -56,6 +60,7 @@ public class Iframe extends BasePage {
         return logosName;
     }
 
+    @Step("Получить информацию о placeholders")
     public List<String> getListPlaceholderName() {
         wait5(paymentTitle);
 
@@ -70,6 +75,7 @@ public class Iframe extends BasePage {
         return filedTitle;
     }
 
+    @Step("Закрыть iFrame")
     public void closeIFrame() {
         close.click();
         getWebDriver().switchTo().defaultContent();

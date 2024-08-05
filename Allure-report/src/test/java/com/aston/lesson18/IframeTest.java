@@ -1,5 +1,6 @@
 package com.aston.lesson18;
 
+import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -13,7 +14,9 @@ public class IframeTest extends BaseTest {
     private final List<String> TITLE_FIELD = List.of(PAYMENT + ".00 BYN", "Оплата: Услуги связи Номер:375" + NUMBER,
             "Номер карты", "Срок действия", "Имя держателя (как на карте)", "CVC", "Оплатить " + PAYMENT + ".00 BYN");
 
+
     @Test(description = "Проверка информации о логотипах в iFrame", dataProvider = "logosInfo")
+    @Owner(value = "Elena-Rubanova")
     public void checkLogoTest(String number, String payment, int amount, List<String> logoname) {
 
         Iframe iFrame = getPaymentModule().sendParametersAndButtonClick(number, payment);
@@ -32,6 +35,7 @@ public class IframeTest extends BaseTest {
     }
 
     @Test(description = "Проверка поля информации", dataProvider = "fieldInformation")
+    @Owner(value = "Elena-Rubanova")
     void checkFieldInformationTest(String number, String payment, List<String> expected) {
 
         Iframe iFrame = getPaymentModule().sendParametersAndButtonClick(number, payment);
